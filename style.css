@@ -1,0 +1,573 @@
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* min-height: 100vh;
+  background-image: url(img/ground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(54, 38, 50);
+}
+.logo {
+  height: 100%;
+  padding: 0 35px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: pink;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+nav {
+  /* position: fixed;
+  width: 100%; */
+  top: 0;
+  padding: 10px;
+  z-index: 1000;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgb(51, 36, 46);
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 3px 3px 5px black;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 35px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: pink;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background-color: rgba(3, 2, 2, 0.671);
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.sidebar {
+  z-index: 1;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  /* z-index: 999; */
+  background-color: rgba(206, 206, 206, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(206, 206, 206, 0.2);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 970px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+/* AKhir Navbar */
+/* Jumbotron */
+.jumbotron {
+  /* margin-top: 50px; */
+  /* padding-top: 50px; */
+  /* background: url(img/jumbotron.webp) no-repeat;
+  background-size: cover; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* padding: 0 100px; */
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.blink {
+  /* margin-left: 10px; */
+  /* padding: 10px; */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 4rem;
+  animation: blink 2s linear infinite;
+  color: pink;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+h1 {
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+  background-color: rgba(3, 2, 2, 0.671);
+  /* padding: 5px; */
+  width: 100%;
+}
+.main-content h1 {
+  width: auto;
+  padding: 20px;
+  color: pink;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+}
+.main-content h2 {
+  padding: 15px;
+  text-align: center;
+  width: 220px;
+  margin: 10px 0;
+  color: pink;
+  font-size: 2.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content h2:hover {
+  color: black;
+}
+h2 {
+  transition: 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+  background-color: rgba(3, 2, 2, 0.671);
+  padding: 5px;
+  /* width: 40%; */
+}
+h2:hover {
+  background-color: pink;
+}
+.text {
+  color: pink;
+}
+.card-99 {
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px black;
+  background-color: rgba(3, 2, 2, 0.671);
+  padding: 15px;
+}
+.box {
+  padding: 20px;
+}
+.box .card img {
+  object-fit: cover;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 50%;
+}
+@media (max-width: 1100px) {
+  .main-content {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+}
+@media (max-width: 660px) {
+  .card img {
+    width: 100%;
+  }
+}
+.card-link {
+  transition: 0.3s;
+  margin: 20px 0 0 0;
+  padding: 10px;
+  font-size: 0.9375rem;
+  background: pink;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px black;
+}
+.card-link:hover {
+  background-color: rgba(3, 2, 2, 0.671);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.625rem;
+  font-weight: bold;
+  color: black;
+}
+.button:hover {
+  color: pink;
+}
+
+/* About */
+section {
+  background-color: black;
+  /* padding: 20px; */
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+h3 {
+  animation: slidein 3s ease-out 0s 1 normal none;
+  /* animation-name: slidein;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none; */
+  padding: 20px;
+  /* margin-left: 50px; */
+  color: pink;
+  font-size: 2rem;
+}
+.main-content {
+  background-color: rgb(54, 38, 50);
+}
+.main-content .card-about {
+  background-color: rgba(3, 2, 2, 0.671);
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 3px 3px 5px black;
+}
+.text-align {
+  color: pink;
+}
+/* Akhir About */
+
+/* Game Slider */
+.wrapper {
+  padding: 10px;
+  /* background: rgba(3, 2, 2, 0.671); */
+  box-shadow: 3px 3px 5px black;
+  background-color: rgba(3, 2, 2, 0.671);
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel :where(.card-slider, .img) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card-slider {
+  cursor: grab;
+  user-select: none;
+}
+section {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 35px; */
+  /* background: linear-gradient(to left top, #031a9a, #8b53ff); */
+}
+/* .wrapper {
+
+} */
+.wrapper i {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(54, 38, 50);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px black;
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel .card-slider {
+  scroll-snap-align: start;
+  height: 220px;
+  width: 250;
+  list-style: none;
+  background: rgb(51, 36, 46);
+  /* box-shadow: 3px 3px 5px black; */
+  border-radius: 8px;
+  display: flex;
+  cursor: pointer;
+  /* padding-bottom: 15px; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-slider .img {
+  background: rgba(3, 2, 2, 0.671);
+  width: 248px;
+  height: 178px;
+  border-radius: 10%;
+}
+.card-slider .img img {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 4px solid rgb(51, 36, 46);
+}
+/* .card-slider h4 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+} */
+/* .card-slider span {
+  color: #6a6d78;
+  font-size: 1.31rem;
+} */
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2));
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  @media screen and (max-width: 300px) {
+    .wrapper .carousel {
+      grid-auto-columns: 50%;
+    }
+  }
+}
+/* Akhir Game Slider */
+
+/* Services */
+/* Akhir Services */
+
+/* Footer */
+footer {
+  /* position: fixed; */
+  bottom: 0px;
+  width: 100%;
+  /* z-index: 100%; */
+  background: black;
+}
+.main-content-footer {
+  display: flex;
+}
+.main-content-footer .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h4 {
+  color: pink;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: rgb(54, 38, 50);
+}
+.box .content:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 15%;
+  background: pink;
+  top: -10px;
+}
+.left .content p {
+  text-align: justify;
+  color: pink;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+  color: pink;
+}
+.left .content .social a {
+  color: pink;
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: rgb(54, 38, 50);
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+  box-shadow: 1px 1px 3px pink;
+}
+.left .content .social a span:hover {
+  background: rgba(3, 2, 2, 0.671);
+}
+.center .content .fas {
+  font-size: 1.4375rem;
+  background: rgb(54, 38, 50);
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover {
+  background: pink;
+}
+.center .content .text {
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone {
+  margin: 10px 0;
+}
+.right form .text {
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: pink;
+}
+.right form .msg {
+  margin-top: 10px;
+}
+.right form input,
+.right form textarea {
+  width: 100%;
+  font-size: 1.0625rem;
+  background: rgb(54, 38, 50);
+  padding-left: 10px;
+  border: 1px solid pink;
+}
+.right form input:focus,
+.right form textarea:focus {
+  outline-color: pink;
+}
+.right form input {
+  height: 35px;
+}
+.right form .btn {
+  margin-top: 10px;
+}
+button {
+  /* border-radius: 5px; */
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 1.625rem;
+  font-weight: bold;
+  color: black;
+}
+button:hover {
+  color: pink;
+}
+.right form .btn button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: pink;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 1px 1px 3px pink;
+}
+.right form .btn button:hover {
+  background: rgba(3, 2, 2, 0.671);
+}
+.bottom center {
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: rgb(51, 36, 46);
+}
+.bottom center span {
+  color: black;
+}
+.bottom center a {
+  color: pink;
+  text-decoration: none;
+}
+.bottom center a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content-footer {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content-footer .box {
+    margin: 5px 0;
+  }
+}
+/* Akhir Footer */
